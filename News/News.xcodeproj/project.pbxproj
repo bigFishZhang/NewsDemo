@@ -20,6 +20,7 @@
 		FFF4BBC7225DCD21000CF520 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BBC6225DCD21000CF520 /* VideoViewController.swift */; };
 		FFF4BBC9225DCD34000CF520 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BBC8225DCD34000CF520 /* MineViewController.swift */; };
 		FFF4BBCB225DCD41000CF520 /* HuoshanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BBCA225DCD41000CF520 /* HuoshanViewController.swift */; };
+		FFF4BBCD225DDCA6000CF520 /* ZBTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BBCC225DDCA6000CF520 /* ZBTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		FFF4BBC6225DCD21000CF520 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		FFF4BBC8225DCD34000CF520 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		FFF4BBCA225DCD41000CF520 /* HuoshanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuoshanViewController.swift; sourceTree = "<group>"; };
+		FFF4BBCC225DDCA6000CF520 /* ZBTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				FFF4BB90225DC37B000CF520 /* AppDelegate.swift */,
 				FFF4BBBF225DC80C000CF520 /* ZBTabBarController.swift */,
 				FFF4BBC1225DC839000CF520 /* ZBNavigationController.swift */,
+				FFF4BBCC225DDCA6000CF520 /* ZBTabBar.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				FFF4BBCB225DCD41000CF520 /* HuoshanViewController.swift in Sources */,
 				FFF4BBC9225DCD34000CF520 /* MineViewController.swift in Sources */,
 				FFF4BB91225DC37B000CF520 /* AppDelegate.swift in Sources */,
+				FFF4BBCD225DDCA6000CF520 /* ZBTabBar.swift in Sources */,
 				FFF4BBC0225DC80C000CF520 /* ZBTabBarController.swift in Sources */,
 				FFF4BBC2225DC839000CF520 /* ZBNavigationController.swift in Sources */,
 			);
