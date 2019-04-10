@@ -14,6 +14,12 @@
 		FFF4BB9B225DC37E000CF520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF4BB99225DC37E000CF520 /* LaunchScreen.storyboard */; };
 		FFF4BBA6225DC37E000CF520 /* NewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BBA5225DC37E000CF520 /* NewsTests.swift */; };
 		FFF4BBB1225DC37E000CF520 /* NewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BBB0225DC37E000CF520 /* NewsUITests.swift */; };
+		FFF4BBC0225DC80C000CF520 /* ZBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BBBF225DC80C000CF520 /* ZBTabBarController.swift */; };
+		FFF4BBC2225DC839000CF520 /* ZBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BBC1225DC839000CF520 /* ZBNavigationController.swift */; };
+		FFF4BBC5225DCD16000CF520 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BBC4225DCD16000CF520 /* HomeViewController.swift */; };
+		FFF4BBC7225DCD21000CF520 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BBC6225DCD21000CF520 /* VideoViewController.swift */; };
+		FFF4BBC9225DCD34000CF520 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BBC8225DCD34000CF520 /* MineViewController.swift */; };
+		FFF4BBCB225DCD41000CF520 /* HuoshanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BBCA225DCD41000CF520 /* HuoshanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		FFF4BBAC225DC37E000CF520 /* NewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF4BBB0225DC37E000CF520 /* NewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUITests.swift; sourceTree = "<group>"; };
 		FFF4BBB2225DC37E000CF520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF4BBBF225DC80C000CF520 /* ZBTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBTabBarController.swift; sourceTree = "<group>"; };
+		FFF4BBC1225DC839000CF520 /* ZBNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBNavigationController.swift; sourceTree = "<group>"; };
+		FFF4BBC4225DCD16000CF520 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FFF4BBC6225DCD21000CF520 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		FFF4BBC8225DCD34000CF520 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		FFF4BBCA225DCD41000CF520 /* HuoshanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuoshanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +109,8 @@
 		FFF4BB8F225DC37B000CF520 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				FFF4BB90225DC37B000CF520 /* AppDelegate.swift */,
+				FFF4BBC3225DCCF3000CF520 /* Feature */,
+				FFF4BBBE225DC7E1000CF520 /* App */,
 				FFF4BB92225DC37B000CF520 /* ViewController.swift */,
 				FFF4BB94225DC37B000CF520 /* Main.storyboard */,
 				FFF4BB97225DC37E000CF520 /* Assets.xcassets */,
@@ -123,6 +136,27 @@
 				FFF4BBB2225DC37E000CF520 /* Info.plist */,
 			);
 			path = NewsUITests;
+			sourceTree = "<group>";
+		};
+		FFF4BBBE225DC7E1000CF520 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FFF4BB90225DC37B000CF520 /* AppDelegate.swift */,
+				FFF4BBBF225DC80C000CF520 /* ZBTabBarController.swift */,
+				FFF4BBC1225DC839000CF520 /* ZBNavigationController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FFF4BBC3225DCCF3000CF520 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				FFF4BBC4225DCD16000CF520 /* HomeViewController.swift */,
+				FFF4BBC6225DCD21000CF520 /* VideoViewController.swift */,
+				FFF4BBC8225DCD34000CF520 /* MineViewController.swift */,
+				FFF4BBCA225DCD41000CF520 /* HuoshanViewController.swift */,
+			);
+			path = Feature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +290,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF4BBC5225DCD16000CF520 /* HomeViewController.swift in Sources */,
 				FFF4BB93225DC37B000CF520 /* ViewController.swift in Sources */,
+				FFF4BBC7225DCD21000CF520 /* VideoViewController.swift in Sources */,
+				FFF4BBCB225DCD41000CF520 /* HuoshanViewController.swift in Sources */,
+				FFF4BBC9225DCD34000CF520 /* MineViewController.swift in Sources */,
 				FFF4BB91225DC37B000CF520 /* AppDelegate.swift in Sources */,
+				FFF4BBC0225DC80C000CF520 /* ZBTabBarController.swift in Sources */,
+				FFF4BBC2225DC839000CF520 /* ZBNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zzb.com.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -460,7 +500,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zzb.com.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
