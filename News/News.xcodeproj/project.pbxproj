@@ -11,6 +11,8 @@
 		FF9D6AB2225EE6CF002D25FF /* ZBUIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D6AB1225EE6CF002D25FF /* ZBUIConst.swift */; };
 		FF9D6ABD225F134D002D25FF /* UIColor+ZBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D6ABC225F134D002D25FF /* UIColor+ZBExtension.swift */; };
 		FF9D6AC0225F2E72002D25FF /* ZBNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D6ABF225F2E72002D25FF /* ZBNetworkTool.swift */; };
+		FF9D6AC2225F33BA002D25FF /* ZBAPIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D6AC1225F33BA002D25FF /* ZBAPIConst.swift */; };
+		FF9D6AC4225F37F4002D25FF /* ZBMyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D6AC3225F37F4002D25FF /* ZBMyCellModel.swift */; };
 		FFF4BB91225DC37B000CF520 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BB90225DC37B000CF520 /* AppDelegate.swift */; };
 		FFF4BB96225DC37B000CF520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF4BB94225DC37B000CF520 /* Main.storyboard */; };
 		FFF4BB98225DC37E000CF520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF4BB97225DC37E000CF520 /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		FF9D6AB1225EE6CF002D25FF /* ZBUIConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBUIConst.swift; sourceTree = "<group>"; };
 		FF9D6ABC225F134D002D25FF /* UIColor+ZBExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ZBExtension.swift"; sourceTree = "<group>"; };
 		FF9D6ABF225F2E72002D25FF /* ZBNetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBNetworkTool.swift; sourceTree = "<group>"; };
+		FF9D6AC1225F33BA002D25FF /* ZBAPIConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBAPIConst.swift; sourceTree = "<group>"; };
+		FF9D6AC3225F37F4002D25FF /* ZBMyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBMyCellModel.swift; sourceTree = "<group>"; };
 		FFF4BB8D225DC37B000CF520 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF4BB90225DC37B000CF520 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF4BB95225DC37B000CF520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				FF9D6AB1225EE6CF002D25FF /* ZBUIConst.swift */,
+				FF9D6AC1225F33BA002D25FF /* ZBAPIConst.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 		FFF4BBD7225DE6D8000CF520 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FF9D6AC3225F37F4002D25FF /* ZBMyCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -549,6 +555,8 @@
 				FFF4BBC9225DCD34000CF520 /* MineViewController.swift in Sources */,
 				FFF4BB91225DC37B000CF520 /* AppDelegate.swift in Sources */,
 				FF9D6AC0225F2E72002D25FF /* ZBNetworkTool.swift in Sources */,
+				FF9D6AC2225F33BA002D25FF /* ZBAPIConst.swift in Sources */,
+				FF9D6AC4225F37F4002D25FF /* ZBMyCellModel.swift in Sources */,
 				FFF4BBCD225DDCA6000CF520 /* ZBTabBar.swift in Sources */,
 				FFF4BBC0225DC80C000CF520 /* ZBTabBarController.swift in Sources */,
 				FFF4BBC2225DC839000CF520 /* ZBNavigationController.swift in Sources */,

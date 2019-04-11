@@ -9,16 +9,23 @@
 import UIKit
 
 class MineViewController: UITableViewController {
+    var sections = [[ZBMyCellModel]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //隐藏多余的cell
         tableView.tableFooterView = UIView()
         tableView.backgroundColor = UIColor.gloablBackgroundColor()
+        ZBNetworkTool.loadMyCellData { (sections) in
+            let string = "{\"text\":\"我的关注\",\"grey_text\":\"\"}"
+            let myConcern = ZBMyCellModel.deserialize(from: string)
+            var myConcerns = [ZBMyCellModel]()
+            myConcerns.append(myConcern!)
+            self.sections.append(myConcerns)
+            self.sections += sections
+            self.tableView.reloadData()
+        }
     }
-    
-    
-    
 }
 
 extension MineViewController {
@@ -34,16 +41,19 @@ extension MineViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return sections.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return sections[section].count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell.init(style: .default, reuseIdentifier: "cell")
-        cell.textLabel?.text = "test"
+        let section = sections[indexPath.section]
+        let myCellModel = section[indexPath.row]
+        
+        cell.textLabel?.text = myCellModel.text
         return cell
     }
 
