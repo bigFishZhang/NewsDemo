@@ -14,7 +14,7 @@ class ZBTabBarController: UITabBarController {
         super.viewDidLoad()
         //title颜色
         let tabbar = UITabBar.appearance()
-        tabbar.tintColor = UIColor(red: 245/255.0, green: 90/255.0, blue: 93/255.0, alpha: 1.0)
+        tabbar.tintColor = UIColor.gloablStyleColor()
         //添加子控制器
         addChildViewControllers()
 
