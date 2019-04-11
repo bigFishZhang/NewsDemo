@@ -16,6 +16,8 @@ class MineViewController: UITableViewController {
         //隐藏多余的cell
         tableView.tableFooterView = UIView()
         tableView.backgroundColor = UIColor.gloablBackgroundColor()
+        tableView.register( UINib(nibName: String(describing: ZBMyOtherCell.self), bundle: nil), forCellReuseIdentifier: String(describing: ZBMyOtherCell.self))
+        tableView.separatorStyle = .none
         ZBNetworkTool.loadMyCellData { (sections) in
             let string = "{\"text\":\"我的关注\",\"grey_text\":\"\"}"
             let myConcern = ZBMyCellModel.deserialize(from: string)
@@ -31,7 +33,7 @@ class MineViewController: UITableViewController {
 extension MineViewController {
     
     override func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
-        return 10
+        return section == 1 ? 0 :10
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -49,12 +51,19 @@ extension MineViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell.init(style: .default, reuseIdentifier: "cell")
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ZBMyOtherCell.self)) as! ZBMyOtherCell
+ 
         let section = sections[indexPath.section]
         let myCellModel = section[indexPath.row]
-        
-        cell.textLabel?.text = myCellModel.text
+        cell.leftLabel.text = myCellModel.text
+        cell.rightLabel.text = myCellModel.grey_text
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
     }
 
 }
