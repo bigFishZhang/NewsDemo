@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZBMyOtherCell: UITableViewCell {
+class ZBMyOtherCell: UITableViewCell,RegisterCellFromNib {
     /// 标题
     @IBOutlet weak var leftLabel: UILabel!
     /// 副标题

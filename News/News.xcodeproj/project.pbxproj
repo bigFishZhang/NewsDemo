@@ -15,6 +15,13 @@
 		FF9D6AC4225F37F4002D25FF /* ZBMyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D6AC3225F37F4002D25FF /* ZBMyCellModel.swift */; };
 		FF9D6AC7225F6287002D25FF /* ZBMyOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D6AC5225F6287002D25FF /* ZBMyOtherCell.swift */; };
 		FF9D6AC8225F6287002D25FF /* ZBMyOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9D6AC6225F6287002D25FF /* ZBMyOtherCell.xib */; };
+		FFC5D68C2260245A00A75EA4 /* ZBMyFirstSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5D68A2260245A00A75EA4 /* ZBMyFirstSectionCell.swift */; };
+		FFC5D68D2260245A00A75EA4 /* ZBMyFirstSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFC5D68B2260245A00A75EA4 /* ZBMyFirstSectionCell.xib */; };
+		FFC5D68F2260296800A75EA4 /* UIView+ZBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5D68E2260296800A75EA4 /* UIView+ZBExtension.swift */; };
+		FFC5D69122602A1B00A75EA4 /* UITableView+ZBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5D69022602A1B00A75EA4 /* UITableView+ZBExtension.swift */; };
+		FFC5D69322602F3F00A75EA4 /* UICollectionView+ZBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5D69222602F3F00A75EA4 /* UICollectionView+ZBExtension.swift */; };
+		FFC5D69622606B4B00A75EA4 /* ZBConcernCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5D69422606B4B00A75EA4 /* ZBConcernCell.swift */; };
+		FFC5D69722606B4B00A75EA4 /* ZBConcernCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFC5D69522606B4B00A75EA4 /* ZBConcernCell.xib */; };
 		FFF4BB91225DC37B000CF520 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BB90225DC37B000CF520 /* AppDelegate.swift */; };
 		FFF4BB96225DC37B000CF520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF4BB94225DC37B000CF520 /* Main.storyboard */; };
 		FFF4BB98225DC37E000CF520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF4BB97225DC37E000CF520 /* Assets.xcassets */; };
@@ -60,6 +67,13 @@
 		FF9D6AC3225F37F4002D25FF /* ZBMyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBMyCellModel.swift; sourceTree = "<group>"; };
 		FF9D6AC5225F6287002D25FF /* ZBMyOtherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBMyOtherCell.swift; sourceTree = "<group>"; };
 		FF9D6AC6225F6287002D25FF /* ZBMyOtherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZBMyOtherCell.xib; sourceTree = "<group>"; };
+		FFC5D68A2260245A00A75EA4 /* ZBMyFirstSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBMyFirstSectionCell.swift; sourceTree = "<group>"; };
+		FFC5D68B2260245A00A75EA4 /* ZBMyFirstSectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZBMyFirstSectionCell.xib; sourceTree = "<group>"; };
+		FFC5D68E2260296800A75EA4 /* UIView+ZBExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ZBExtension.swift"; sourceTree = "<group>"; };
+		FFC5D69022602A1B00A75EA4 /* UITableView+ZBExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ZBExtension.swift"; sourceTree = "<group>"; };
+		FFC5D69222602F3F00A75EA4 /* UICollectionView+ZBExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ZBExtension.swift"; sourceTree = "<group>"; };
+		FFC5D69422606B4B00A75EA4 /* ZBConcernCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBConcernCell.swift; sourceTree = "<group>"; };
+		FFC5D69522606B4B00A75EA4 /* ZBConcernCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZBConcernCell.xib; sourceTree = "<group>"; };
 		FFF4BB8D225DC37B000CF520 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF4BB90225DC37B000CF520 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF4BB95225DC37B000CF520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -154,6 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				FF9D6ABC225F134D002D25FF /* UIColor+ZBExtension.swift */,
+				FFC5D68E2260296800A75EA4 /* UIView+ZBExtension.swift */,
+				FFC5D69022602A1B00A75EA4 /* UITableView+ZBExtension.swift */,
+				FFC5D69222602F3F00A75EA4 /* UICollectionView+ZBExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -316,6 +333,10 @@
 			children = (
 				FF9D6AC5225F6287002D25FF /* ZBMyOtherCell.swift */,
 				FF9D6AC6225F6287002D25FF /* ZBMyOtherCell.xib */,
+				FFC5D68A2260245A00A75EA4 /* ZBMyFirstSectionCell.swift */,
+				FFC5D68B2260245A00A75EA4 /* ZBMyFirstSectionCell.xib */,
+				FFC5D69422606B4B00A75EA4 /* ZBConcernCell.swift */,
+				FFC5D69522606B4B00A75EA4 /* ZBConcernCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -484,6 +505,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF4BB9B225DC37E000CF520 /* LaunchScreen.storyboard in Resources */,
+				FFC5D68D2260245A00A75EA4 /* ZBMyFirstSectionCell.xib in Resources */,
+				FFC5D69722606B4B00A75EA4 /* ZBConcernCell.xib in Resources */,
 				FFF4BB98225DC37E000CF520 /* Assets.xcassets in Resources */,
 				FF9D6AC8225F6287002D25FF /* ZBMyOtherCell.xib in Resources */,
 				FFF4BB96225DC37B000CF520 /* Main.storyboard in Resources */,
@@ -516,12 +539,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-News/Pods-News-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,7 +579,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC5D68F2260296800A75EA4 /* UIView+ZBExtension.swift in Sources */,
 				FFF4BBC5225DCD16000CF520 /* HomeViewController.swift in Sources */,
+				FFC5D69322602F3F00A75EA4 /* UICollectionView+ZBExtension.swift in Sources */,
 				FF9D6AB2225EE6CF002D25FF /* ZBUIConst.swift in Sources */,
 				FF9D6AC7225F6287002D25FF /* ZBMyOtherCell.swift in Sources */,
 				FFF4BBC7225DCD21000CF520 /* VideoViewController.swift in Sources */,
@@ -564,7 +591,10 @@
 				FFF4BB91225DC37B000CF520 /* AppDelegate.swift in Sources */,
 				FF9D6AC0225F2E72002D25FF /* ZBNetworkTool.swift in Sources */,
 				FF9D6AC2225F33BA002D25FF /* ZBAPIConst.swift in Sources */,
+				FFC5D68C2260245A00A75EA4 /* ZBMyFirstSectionCell.swift in Sources */,
+				FFC5D69122602A1B00A75EA4 /* UITableView+ZBExtension.swift in Sources */,
 				FF9D6AC4225F37F4002D25FF /* ZBMyCellModel.swift in Sources */,
+				FFC5D69622606B4B00A75EA4 /* ZBConcernCell.swift in Sources */,
 				FFF4BBCD225DDCA6000CF520 /* ZBTabBar.swift in Sources */,
 				FFF4BBC0225DC80C000CF520 /* ZBTabBarController.swift in Sources */,
 				FFF4BBC2225DC839000CF520 /* ZBNavigationController.swift in Sources */,

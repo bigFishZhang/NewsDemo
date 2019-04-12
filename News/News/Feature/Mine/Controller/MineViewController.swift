@@ -10,13 +10,14 @@ import UIKit
 
 class MineViewController: UITableViewController {
     var sections = [[ZBMyCellModel]]()
-
+    var concerns = [ZBMyConcern]()
     override func viewDidLoad() {
         super.viewDidLoad()
         //隐藏多余的cell
         tableView.tableFooterView = UIView()
         tableView.backgroundColor = UIColor.gloablBackgroundColor()
-        tableView.register( UINib(nibName: String(describing: ZBMyOtherCell.self), bundle: nil), forCellReuseIdentifier: String(describing: ZBMyOtherCell.self))
+        tableView.zb_registerCell(cell: ZBMyFirstSectionCell.self)
+        tableView.zb_registerCell(cell: ZBMyOtherCell.self)
         tableView.separatorStyle = .none
         ZBNetworkTool.loadMyCellData { (sections) in
             let string = "{\"text\":\"我的关注\",\"grey_text\":\"\"}"
@@ -26,7 +27,13 @@ class MineViewController: UITableViewController {
             self.sections.append(myConcerns)
             self.sections += sections
             self.tableView.reloadData()
+            ZBNetworkTool.loadMyConcern(completionHandler: { (concerns) in
+                self.concerns = concerns;
+                let indexSet = IndexSet(integer: 0)
+                self.tableView.reloadSections(indexSet, with: .automatic)
+            })
         }
+        
     }
 }
 
@@ -42,6 +49,14 @@ extension MineViewController {
         return headView
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0  && indexPath.row == 0{
+            return (concerns.count == 0 || concerns.count ==  1) ?  40 : 114
+        }
+        return 40
+    }
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
     }
@@ -51,9 +66,24 @@ extension MineViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 0 && indexPath.row == 0 {
+            let cell = tableView.zb_dequeueReusableCell(indexPath: indexPath) as ZBMyFirstSectionCell
+            let section = sections[indexPath.section]
+            cell.mycellModel = section[indexPath.row]
+            if concerns.count == 0 || concerns.count == 1 {
+                cell.collectionView.isHidden = true
+            }
+            if concerns.count == 1 {
+                cell.myConcern = concerns[0]
+            }
+            if concerns.count > 1 {
+                cell.myConcerns = concerns
+            }
+            
+            return cell
+        }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ZBMyOtherCell.self)) as! ZBMyOtherCell
- 
+        let cell = tableView.zb_dequeueReusableCell(indexPath: indexPath) as ZBMyOtherCell
         let section = sections[indexPath.section]
         let myCellModel = section[indexPath.row]
         cell.leftLabel.text = myCellModel.text
