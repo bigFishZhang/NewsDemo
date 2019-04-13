@@ -11,6 +11,15 @@ import UIKit
 class MineViewController: UITableViewController {
     var sections = [[ZBMyCellModel]]()
     var concerns = [ZBMyConcern]()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         //隐藏多余的cell
@@ -19,6 +28,7 @@ class MineViewController: UITableViewController {
         tableView.zb_registerCell(cell: ZBMyFirstSectionCell.self)
         tableView.zb_registerCell(cell: ZBMyOtherCell.self)
         tableView.separatorStyle = .none
+        tableView.tableHeaderView = headerView
         ZBNetworkTool.loadMyCellData { (sections) in
             let string = "{\"text\":\"我的关注\",\"grey_text\":\"\"}"
             let myConcern = ZBMyCellModel.deserialize(from: string)
@@ -33,8 +43,19 @@ class MineViewController: UITableViewController {
                 self.tableView.reloadSections(indexSet, with: .automatic)
             })
         }
-        
     }
+    
+    fileprivate lazy var headerView:ZBNoLoginHeaderView = {
+        let headerView = ZBNoLoginHeaderView.headerView()
+        return headerView
+    }()
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    
+    
 }
 
 extension MineViewController {
@@ -95,5 +116,16 @@ extension MineViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
     }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        if offsetY < 0 {
+            let totalOffset = HEADER_VIEW_HEIGHT + abs(offsetY)
+        }
+    }
+    
+    
+    
+    
 
 }
