@@ -1,2 +1,0 @@
-# NewsDemo
-Swift
