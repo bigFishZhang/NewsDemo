@@ -121,6 +121,8 @@ extension MineViewController {
         let offsetY = scrollView.contentOffset.y
         if offsetY < 0 {
             let totalOffset = HEADER_VIEW_HEIGHT + abs(offsetY)
+            let f = totalOffset / HEADER_VIEW_HEIGHT
+            headerView.bgImageView.frame = CGRect(x: -SCREEN_WIDTH * (f - 1) * 0.5, y: offsetY, width: SCREEN_WIDTH * f, height: totalOffset)
         }
     }
     

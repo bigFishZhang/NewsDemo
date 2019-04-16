@@ -8,5 +8,5 @@
 
 import UIKit
 
-let HEADER_VIEW_HEIGHT:CGFont = 288 as! CGFont
+let HEADER_VIEW_HEIGHT:CGFloat = 288
 

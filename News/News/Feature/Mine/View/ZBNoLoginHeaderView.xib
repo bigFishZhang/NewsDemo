@@ -126,6 +126,17 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bgImageView" destination="Gk4-W3-pUO" id="ETH-iB-qox"/>
+                <outlet property="favoriteButton" destination="zyW-Mz-Zsl" id="171-H1-HHP"/>
+                <outlet property="historyButton" destination="bgQ-fd-PJ2" id="GJQ-kj-jbT"/>
+                <outlet property="mobileButton" destination="6vf-o2-iEa" id="stu-hd-Gr1"/>
+                <outlet property="moreLoginButton" destination="kvA-ZF-xam" id="Q53-Gn-VYy"/>
+                <outlet property="nightButton" destination="q3T-kr-PYf" id="Jm6-Hp-Jk4"/>
+                <outlet property="qqButton" destination="VTr-rc-als" id="PIQ-CH-gR8"/>
+                <outlet property="sinaButton" destination="PJI-fT-lgi" id="JKJ-mU-U2s"/>
+                <outlet property="wechatButton" destination="L7v-6Q-wg9" id="Mfe-pX-NVf"/>
+            </connections>
             <point key="canvasLocation" x="53.600000000000001" y="48.575712143928037"/>
         </view>
     </objects>
