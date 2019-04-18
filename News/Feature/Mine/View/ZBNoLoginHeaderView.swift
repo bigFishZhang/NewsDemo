@@ -74,8 +74,7 @@ class ZBNoLoginHeaderView: UIView {
         sender.isSelected = !sender.isSelected
         UserDefaults.standard.set(sender.isSelected, forKey: IS_NIGHT)
         ZBTheme.switchNight(sender.isSelected)
-//        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "dayOrNightButtonClicked"), object: sender.isSelected)
-        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: DayOrNightButtonDidClickedNotification), object: sender.isSelected)
     }
     
 

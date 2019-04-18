@@ -26,6 +26,7 @@
 		FFC5D69322602F3F00A75EA4 /* UICollectionView+ZBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5D69222602F3F00A75EA4 /* UICollectionView+ZBExtension.swift */; };
 		FFC5D69622606B4B00A75EA4 /* ZBConcernCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5D69422606B4B00A75EA4 /* ZBConcernCell.swift */; };
 		FFC5D69722606B4B00A75EA4 /* ZBConcernCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFC5D69522606B4B00A75EA4 /* ZBConcernCell.xib */; };
+		FFE2A30222670C88001A9B04 /* ZBNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE2A30122670C88001A9B04 /* ZBNotification.swift */; };
 		FFF4BB91225DC37B000CF520 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BB90225DC37B000CF520 /* AppDelegate.swift */; };
 		FFF4BB96225DC37B000CF520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF4BB94225DC37B000CF520 /* Main.storyboard */; };
 		FFF4BB98225DC37E000CF520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF4BB97225DC37E000CF520 /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 		FFC5D69222602F3F00A75EA4 /* UICollectionView+ZBExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ZBExtension.swift"; sourceTree = "<group>"; };
 		FFC5D69422606B4B00A75EA4 /* ZBConcernCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBConcernCell.swift; sourceTree = "<group>"; };
 		FFC5D69522606B4B00A75EA4 /* ZBConcernCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZBConcernCell.xib; sourceTree = "<group>"; };
+		FFE2A30122670C88001A9B04 /* ZBNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBNotification.swift; sourceTree = "<group>"; };
 		FFF4BB8D225DC37B000CF520 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF4BB90225DC37B000CF520 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF4BB95225DC37B000CF520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				FF9D6AB1225EE6CF002D25FF /* ZBUIConst.swift */,
 				FF9D6AC1225F33BA002D25FF /* ZBAPIConst.swift */,
 				FFF7D77C226576E800391623 /* ZBTheme.swift */,
+				FFE2A30122670C88001A9B04 /* ZBNotification.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				FFF4BBCB225DCD41000CF520 /* HuoshanViewController.swift in Sources */,
 				FFF4BBC9225DCD34000CF520 /* MineViewController.swift in Sources */,
 				FFF4BB91225DC37B000CF520 /* AppDelegate.swift in Sources */,
+				FFE2A30222670C88001A9B04 /* ZBNotification.swift in Sources */,
 				FF9D6AC0225F2E72002D25FF /* ZBNetworkTool.swift in Sources */,
 				FF9D6AC2225F33BA002D25FF /* ZBAPIConst.swift in Sources */,
 				FFC5D68C2260245A00A75EA4 /* ZBMyFirstSectionCell.swift in Sources */,

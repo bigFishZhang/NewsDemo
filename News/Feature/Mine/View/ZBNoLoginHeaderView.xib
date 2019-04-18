@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper_profile_night" translatesAutoresizingMaskIntoConstraints="NO" id="Gk4-W3-pUO">
-                    <rect key="frame" x="0.0" y="-20" width="375" height="280"/>
+                    <rect key="frame" x="0.0" y="-44" width="375" height="304"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCJ-CP-8g9">
                     <rect key="frame" x="0.0" y="190" width="375" height="70"/>
@@ -119,7 +119,7 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Gk4-W3-pUO" secondAttribute="bottom" id="DPY-Au-dCg"/>
                 <constraint firstItem="kCJ-CP-8g9" firstAttribute="top" secondItem="kvA-ZF-xam" secondAttribute="bottom" constant="20" id="FdC-7p-gnE"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="kCJ-CP-8g9" secondAttribute="bottom" id="FtA-4N-zIT"/>
-                <constraint firstItem="Gk4-W3-pUO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="-20" id="RJx-Dq-Kwn"/>
+                <constraint firstItem="Gk4-W3-pUO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="-44" id="RJx-Dq-Kwn"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Gk4-W3-pUO" secondAttribute="trailing" id="Tkk-00-VRo"/>
                 <constraint firstItem="Gk4-W3-pUO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Tth-kC-MRQ"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="o3q-pK-opn" secondAttribute="trailing" id="ZXI-Ct-5aq"/>

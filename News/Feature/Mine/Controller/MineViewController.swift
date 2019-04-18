@@ -27,6 +27,7 @@ class MineViewController: UITableViewController {
         tableView.backgroundColor = UIColor.gloablBackgroundColor()
         tableView.zb_registerCell(cell: ZBMyFirstSectionCell.self)
         tableView.zb_registerCell(cell: ZBMyOtherCell.self)
+        tableView.theme_backgroundColor = "colors.tableViewBackgroundColor"
         tableView.separatorStyle = .none
         tableView.tableHeaderView = headerView
         ZBNetworkTool.loadMyCellData { (sections) in
@@ -66,7 +67,7 @@ extension MineViewController {
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headView = UIView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH , height: SCREEN_HEIGHT));
-        headView.backgroundColor = UIColor.gloablBackgroundColor()
+        headView.theme_backgroundColor = "colors.tableViewBackgroundColor"
         return headView
     }
     

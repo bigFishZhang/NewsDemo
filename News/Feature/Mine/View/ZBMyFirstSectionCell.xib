@@ -99,6 +99,8 @@
                 <outlet property="leftLabel" destination="iJj-O8-nsL" id="K1g-Nr-iGr"/>
                 <outlet property="rightImageView" destination="iID-Ly-gae" id="ynr-HS-gqC"/>
                 <outlet property="rightLabel" destination="npQ-1y-nnX" id="I2c-Vj-sb4"/>
+                <outlet property="separatorView" destination="5nl-U6-0rK" id="nXq-LB-amd"/>
+                <outlet property="topView" destination="upG-x0-aAC" id="HLY-Mv-hwe"/>
             </connections>
             <point key="canvasLocation" x="-22.399999999999999" y="-191.1544227886057"/>
         </tableViewCell>

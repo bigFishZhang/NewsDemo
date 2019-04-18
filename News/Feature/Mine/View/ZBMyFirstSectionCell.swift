@@ -19,6 +19,10 @@ class ZBMyFirstSectionCell: UITableViewCell,RegisterCellFromNib {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var topView: UIView!
+    /// 分割线
+    @IBOutlet weak var separatorView: UIView!
+    
     var myConcerns = [ZBMyConcern]()
     {
         didSet {
@@ -51,6 +55,14 @@ class ZBMyFirstSectionCell: UITableViewCell,RegisterCellFromNib {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.zb_registerCell(cell: ZBConcernCell.self)
+        /// 设置主题
+        leftLabel.theme_textColor = "colors.black"
+        rightLabel.theme_textColor = "colors.cellRightTextColor"
+        rightImageView.theme_image = "images.cellRightArrow"
+        separatorView.theme_backgroundColor = "colors.separatorViewColor"
+        theme_backgroundColor = "colors.cellBackgroundColor"
+        topView.theme_backgroundColor = "colors.cellBackgroundColor"
+        collectionView.theme_backgroundColor = "colors.cellBackgroundColor"
         // Configure the view for the selected state
     }
     
