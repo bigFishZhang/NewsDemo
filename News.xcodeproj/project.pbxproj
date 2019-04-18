@@ -27,6 +27,8 @@
 		FFC5D69622606B4B00A75EA4 /* ZBConcernCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5D69422606B4B00A75EA4 /* ZBConcernCell.swift */; };
 		FFC5D69722606B4B00A75EA4 /* ZBConcernCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFC5D69522606B4B00A75EA4 /* ZBConcernCell.xib */; };
 		FFE2A30222670C88001A9B04 /* ZBNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE2A30122670C88001A9B04 /* ZBNotification.swift */; };
+		FFE2A30422684EB1001A9B04 /* ZBMoreLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE2A30322684EB1001A9B04 /* ZBMoreLoginViewController.swift */; };
+		FFE2A30622684EE6001A9B04 /* ZBMoreLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE2A30522684EE6001A9B04 /* ZBMoreLoginViewController.storyboard */; };
 		FFF4BB91225DC37B000CF520 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4BB90225DC37B000CF520 /* AppDelegate.swift */; };
 		FFF4BB96225DC37B000CF520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF4BB94225DC37B000CF520 /* Main.storyboard */; };
 		FFF4BB98225DC37E000CF520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF4BB97225DC37E000CF520 /* Assets.xcassets */; };
@@ -85,6 +87,8 @@
 		FFC5D69422606B4B00A75EA4 /* ZBConcernCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBConcernCell.swift; sourceTree = "<group>"; };
 		FFC5D69522606B4B00A75EA4 /* ZBConcernCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZBConcernCell.xib; sourceTree = "<group>"; };
 		FFE2A30122670C88001A9B04 /* ZBNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBNotification.swift; sourceTree = "<group>"; };
+		FFE2A30322684EB1001A9B04 /* ZBMoreLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBMoreLoginViewController.swift; sourceTree = "<group>"; };
+		FFE2A30522684EE6001A9B04 /* ZBMoreLoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZBMoreLoginViewController.storyboard; sourceTree = "<group>"; };
 		FFF4BB8D225DC37B000CF520 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF4BB90225DC37B000CF520 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF4BB95225DC37B000CF520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -355,6 +359,8 @@
 			isa = PBXGroup;
 			children = (
 				FFF4BBC8225DCD34000CF520 /* MineViewController.swift */,
+				FFE2A30322684EB1001A9B04 /* ZBMoreLoginViewController.swift */,
+				FFE2A30522684EE6001A9B04 /* ZBMoreLoginViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -478,6 +484,7 @@
 				FFC5D68D2260245A00A75EA4 /* ZBMyFirstSectionCell.xib in Resources */,
 				FFC5D69722606B4B00A75EA4 /* ZBConcernCell.xib in Resources */,
 				FFF4BB98225DC37E000CF520 /* Assets.xcassets in Resources */,
+				FFE2A30622684EE6001A9B04 /* ZBMoreLoginViewController.storyboard in Resources */,
 				FF3C02AB2265819500345E06 /* default_theme.plist in Resources */,
 				FF9D6AC8225F6287002D25FF /* ZBMyOtherCell.xib in Resources */,
 				FF3C02AC2265819500345E06 /* night_theme.plist in Resources */,
@@ -577,6 +584,7 @@
 				FFF4BBC0225DC80C000CF520 /* ZBTabBarController.swift in Sources */,
 				FFF7D77D226576E800391623 /* ZBTheme.swift in Sources */,
 				FFAAE188226173BB00CD035F /* ZBNoLoginHeaderView.swift in Sources */,
+				FFE2A30422684EB1001A9B04 /* ZBMoreLoginViewController.swift in Sources */,
 				FFF4BBC2225DC839000CF520 /* ZBNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

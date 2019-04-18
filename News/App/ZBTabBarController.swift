@@ -101,11 +101,8 @@ class ZBTabBarController: UITabBarController {
         addChild(ZBNavigationController(rootViewController: childController))
     }
     
-    
-    
-    
-    
-    
-
-
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+   
 }
